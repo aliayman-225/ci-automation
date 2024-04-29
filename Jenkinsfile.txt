@@ -69,16 +69,16 @@ pipeline {
             }
         }
 
-    stage('Build App Image') {
-       steps {
+    // stage('Build App Image') {
+    //   steps {
        
-            script {
-                     dockerImage = docker.build( "vprofile" + ":$BUILD_NUMBER", "./Docker-files/app/multistage/")
-            }
+    //         script {
+    //                  dockerImage = docker.build( "vprofile" + ":$BUILD_NUMBER", "./Docker-files/app/multistage/")
+    //         }
 
-     }
+    //  }
     
-    }
+    // }
     
     
      stage('Push Docker Image to JCR') {
