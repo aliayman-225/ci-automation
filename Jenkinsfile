@@ -11,7 +11,7 @@ pipeline {
     stages{
         stage('Fetch code') {
           steps{
-              git branch: 'vp-rem', url:'https://github.com/devopshydclub/vprofile-repo.git'
+              git branch: 'Nexus+slack_notification', url:'https://github.com/aliayman-225/ci-automation.git'
           }  
         }
 
